@@ -1,0 +1,123 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1E1E1E;
+    z-index: 9;
+}
+
+.nav {
+    padding: 50px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    display: flex;
+    gap: 25px;
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20.23px;
+    text-transform: uppercase;
+}
+
+.dropdown > .link,
+.link:hover {
+    color: white;
+}
+
+/*.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, 150ms ease-in-out;
+    transform: translateY(-10px);
+}
+
+.dropdown > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}*/
+
+.post {
+    display: flex;
+    color: #FFFFFF;
+    margin: 15px 115px;
+    gap: 10px;
+}
+
+.press {
+    margin: 5px;
+    padding: 1px, 5px, 1px, 5px;
+    border: 2px solid #242B47;
+    background: #242B47;
+    border-radius: 4px;
+    height: 24.61px;
+}
+
+.press, span {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    line-height: 100%;
+    vertical-align: top;
+    font-size: medium;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 46px 115px;
+    border: 1px solid #1E1E1E;
+    background: #1E1E1E;
+}
+
+.option, h3 {
+    font-style: medium;
+    line-height: 35px;
+    vertical-align: top;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.choose, option {
+    font-size: 14px;
+    color: #C6C7CB;
+    background: #252B46;
+    padding: 10px;
+    width: 260px;
+    height: 45px;
+    border-radius: 6px;
+}
+
+.map {
+    border: 2px solid #393C4A;
+    background: #252B46;
+    width: 1266px;
+    height: 782px;
+    border-radius: 13px;
+    transform: translateX(10%);
+}
+
+.horizontal {
+    width: 1266px;;
+    transform: translateX(10%);
+    position: relative;
+    bottom: 10px;
+    opacity: 0.5;
+}
