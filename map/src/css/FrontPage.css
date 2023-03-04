@@ -13,6 +13,11 @@
     gap: 61px;
 }
 
+.nav img {
+    width: 183px;
+    height: 32px;
+}
+
 .nav-link {
     display: flex;
     gap: 48px;
@@ -517,13 +522,16 @@
     text-transform: capitalize;
 }
 
-.direction p {
+.north p {
     color: #FFFFFF;
     opacity: 60%;
     line-height: 17.34px;
-    size: 12px;
+    font-size: 12px;
     width: 34px;
     height: 17px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .one {
