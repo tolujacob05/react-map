@@ -136,7 +136,7 @@ const FrontPage = () => {
                 <span className="press">PRESIDENTIAL / 2023</span>
             </div>
 
-            <div className="option">
+             <div className="option">
                 <h3>Presidential Race</h3>
                 <select className="choose">
                     <option className="tap">
@@ -303,7 +303,7 @@ const FrontPage = () => {
                             <li><a href="#/">terms of services</a></li>
                         </div>
                         <div className="link1">
-                            <li class="title">about</li>
+                            <li class="title">Let's chat!</li>
                             <li class="sub-title">hernalytics@gmail.com</li>
                             <li class="sub-title">+234 801 234 5678</li>
                             <div className="social">
@@ -323,6 +323,5 @@ const FrontPage = () => {
             </footer>
         </>
     )
-
 };
 export default FrontPage;
