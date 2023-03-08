@@ -273,19 +273,32 @@
 .post {
     display: flex;
     color: #FFFFFF;
-    margin: 15px 115px;
-    gap: 10px;
+    margin: 10px 115px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+.data {
+    display: flex;
+}
+
+.data h1 {
+    font-size: 30px;
+    width: 184px;
 }
 
 .press {
     margin: 9px;
     padding: 1px, 5px, 1px, 5px;
     border: 2px solid #1B1F30;
+    width: 156px;
     background: #1B1F30;
     border-radius: 4px;
     height: 24.61px;
     position: relative;
-    right: 10px;
+    right: 18px;
 }
 
 .press, span {
@@ -295,11 +308,13 @@
     line-height: 100%;
     vertical-align: top;
     font-size: medium;
+    width: 166px;
+    height: 24.61px;
 }
 
 .option {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     margin: 46px 115px;
     border: 1px solid #252B46;
     background: #252B46;
@@ -344,7 +359,521 @@
     opacity: 0.1;
 }
 
-.first {
+.percent {
+    border: 2px solid #64CCFF;
+    width: 552px;
+    height: 16px;
+    background: #64CCFF;
+}
+
+.percent2 {
+    border: 2px solid #0AA83F;
+    width: 491px;
+    height: 16px;
+    background: #0AA83F;
+}
+
+.percent3 {
+    border: 2px solid #D62B3C;
+    width: 225px;
+    height: 16px;
+    background: #D62B3C;
+}
+
+.candidates {
+    margin: 15px 115px;
+}
+
+.president h5 {
+    width: 83px;
+    height: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apc {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(38px);
+}
+
+.polygon img {
+   position: absolute;
+   top: -8.5px;
+   left: 97px;
+}
+
+.tinubu {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 206px;
+    height: 56px;
+}
+
+.apc1 {
+    padding: 8px;
+}
+
+.apc2 {
+    padding: 8px;
+}
+
+.apc2 h6 {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #64CCFF;
+    text-transform: capitalize;
+}
+
+.apc2 p {
+    width: 144px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+}
+
+.lp {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(108px);
+}
+
+.polygon2 img {
+    position: absolute;
+    top: -8.5px;
+    left: 96.7px;
+}
+
+.obi {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 204.67px;
+    height: 56px;
+}
+
+.lp1 {
+    padding: 8px;
+}
+
+.lp2 {
+    padding: 8px;
+}
+
+.lp2 h6 {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #0AA83F;
+    text-transform: capitalize;
+}
+
+.lp2 p {
+    width: 144px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+}
+
+.pdp {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(30px);
+}
+
+.polygon3 img {
+    position: absolute;
+    top: -8.5px;
+    left: 89.67px;
+}
+
+.atiku {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 190.67px;
+    height: 64px;
+}
+
+.pdp1 {
+    padding: 8px;
+}
+
+.pdp2 {
+    padding: 8px;
+}
+
+.pdp2 h6 {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #D62B3C;
+    text-transform: capitalize;
+}
+
+.pdp2 p {
+    width: 144px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+}
+
+.sen-house-container {
+    display: flex;
+    margin-top: 47px;
+    justify-content: space-between;
+}
+
+.senate-container h5 {
+    width: 59px;
+    height: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.whole-sen-cont {
+    display: flex;
+}
+
+.apc-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(px);
+}
+
+.p img {
+    position: absolute;
+    top: -8.5px;
+    left: 74.7px;
+}
+
+.tinubu1 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 160px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.apc-word h6 {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #64CCFF;
+    text-transform: capitalize;
+    width: 96px;
+    height: 40px;
+}
+
+.apc-word p {
+    width: 96px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.lp-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(-15px);
+}
+
+.p2 img {
+    position: absolute;
+    top: -8.5px;
+    left: 69px;
+}
+
+.obi1 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 144px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.lp-word h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #0AA83F;
+    text-transform: capitalize;
+    width: 70px;
+    height: 40px;
+}
+
+.lp-word p {
+    width: 96px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.pdp-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(44px);
+}
+
+.p3 img {
+    position: absolute;
+    top: -8.5px;
+    left: 78px;
+}
+
+.atiku1 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 169px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.pdp-word h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #D62B3C;
+    text-transform: capitalize;
+    width: 105px;
+    height: 40px;
+}
+
+.pdp-word p {
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.percentage {
+    border: 2px solid #64CCFF;
+    width: 207px;
+    height: 16px;
+    background: #64CCFF;
+}
+
+.percentage2 {
+    border: 2px solid #0AA83F;
+    width: 145px;
+    height: 16px;
+    background: #0AA83F;
+}
+
+.percentage3 {
+    border: 2px solid #D62B3C;
+    width: 214px;
+    height: 16px;
+    background: #D62B3C;
+}
+
+.house-container {
+    transform: translateX(25px);
+}
+
+.whole-house-cont {
+    display: flex;
+}
+
+.house-container h5 {
+    width: 59px;
+    height: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.apc1-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(px);
+}
+
+.line1 {
+    border: 2px solid #64CCFF;
+    width: 260px;
+    height: 16px;
+    background: #64CCFF;
+}
+
+.poly img {
+    position: absolute;
+    top: -8.5px;
+    left: 74.7px;
+}
+
+.tinubu2 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 160px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.apc1-word h6 {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #64CCFF;
+    text-transform: capitalize;
+    width: 96px;
+    height: 40px;
+}
+
+.apc1-word p {
+    width: 96px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.lp2-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(-15px);
+}
+
+.line2 {
+    border: 2px solid #0AA83F;
+    height: 16px;
+    background: #0AA83F;
+}
+
+.poly2 img {
+    position: absolute;
+    top: -8.5px;
+    left: 69px;
+}
+
+.obi2 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 144px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.lp2-word h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #0AA83F;
+    text-transform: capitalize;
+    width: 70px;
+    height: 40px;
+}
+
+.lp2-word p {
+    width: 96px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.pdp2-container {
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(44px);
+}
+
+.line3 {
+    border: 2px solid #D62B3C;
+    width: 260px;
+    height: 16px;
+    background: #D62B3C;
+}
+
+.poly3 img {
+    position: absolute;
+    top: -8.5px;
+    left: 78px;
+}
+
+.atiku2 {
+    display: flex;
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    width: 169px;
+    height: 76px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.pdp2-word h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.23px;
+    color: #D62B3C;
+    text-transform: capitalize;
+    width: 105px;
+    height: 40px;
+}
+
+.pdp2-word p {
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585858;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+/*.first {
     border: 1px solid #393C4A;
     background: #1B1F30;
     width: 1266px;
@@ -639,7 +1168,7 @@
 .gender img {
     width: 10px;
     height: 10.65px;
-}
+}*/
 
 /* FOOTER */
 .foot {

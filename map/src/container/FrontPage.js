@@ -1,20 +1,27 @@
 import React, { useState, useRef } from "react";
 import pic1 from "../img/pic1.png";
 import Frame1 from "..//img/Frame1.png";
-import Ellipse1 from "..//img/Ellipse1.png";
+/*import Ellipse1 from "..//img/Ellipse1.png";
 import Ellipse2 from "..//img/Ellipse2.png";
 import Vector from "..//img/Vector.png";
 import Vector2 from "..//img/Vector2.png";
-import Vector3 from "..//img/Vector3.png";
+import Vector3 from "..//img/Vector3.png";*/
 import Vector4 from "..//img/Vector4.png";
 import Vector5 from "..//img/Vector5.png";
 import Vector6 from "..//img/Vector6.png";
 import Vector7 from "..//img/Vector7.png";
-import ng1 from "..//img/ng1.png";
+/*import ng1 from "..//img/ng1.png";*/
 import Icon1 from "..//img/Icon1.png";
 import Icon2 from "..//img/Icon2.png";
 import Icon3 from "..//img/Icon3.png";
 import Icon4 from "..//img/Icon4.png";
+import tinu from "..//img/tinu.png";
+import obi from "..//img/obi.png";
+import atiku from "..//img/atiku.png";
+import Polygon from "..//img/Polygon.png";
+import apc from "..//img/apc.png";
+import lp from "..//img/lp.png";
+import pdp from "..//img/pdp.png";
 import "../css/FrontPage.css";
 
 
@@ -132,52 +139,245 @@ const FrontPage = () => {
             </nav>
 
             <div className="post">
-                <h1>Post Election Data</h1>
-                <span className="press">PRESIDENTIAL / 2023</span>
-            </div>
+                <div className="data">
+                    <h1>Election Data</h1>
+                    <span className="press">PRESIDENTIAL / 2023</span>
+                </div>
+                <div className="option">
+                    {/*<h3>Presidential Race</h3>*/}
+                    <select className="choose">
+                        <option className="tap">
+                            Election Data
+                        </option>
+                        <option className="tap">
+                            Pre-Election
+                        </option>
+                        <option className="tap">
+                            Election Day Live Updates
+                        </option>
+                        <option className="tap">
+                            Post-Election Anaylsis
+                        </option>
+                    </select>
+                    <select className="choose">
+                        <option className="tap">Presidential</option>
+                        <option className="tap">Gubernatorial</option>
+                        <option className="tap">Senate</option>
+                        <option>House Of Representatives</option>
+                    </select>
+                    <select className="choose">
+                        <option>2023</option>
+                        <option>2019</option>
+                        <option>2015</option>
+                        <option>2011</option>
+                        <option>2007</option>
+                        <option>3003</option>
+                        <option>1999</option>
+                        <option>1995</option>
+                        <option>1991</option>
+                        <option>1987</option>
+                        <option>1983</option>
+                        <option>1979</option>
+                        <option>1975</option>
+                        <option>1971</option>
+                        <option>1967</option>
+                        <option>1963</option>
+                        <option>1959</option>
+                    </select>
+                </div>
+            </div>  
 
-             <div className="option">
-                <h3>Presidential Race</h3>
-                <select className="choose">
-                    <option className="tap">
-                        Election Data
-                    </option>
-                    <option className="tap">
-                        Pre-Election
-                    </option>
-                    <option className="tap">
-                        Election Day Live Updates
-                    </option>
-                    <option className="tap">
-                        Post-Election Anaylsis
-                    </option>
-                </select>
-                <select className="choose">
-                    <option className="tap">Presidential</option>
-                    <option className="tap">Gubernatorial</option>
-                    <option className="tap">Senate</option>
-                    <option>House Of Representatives</option>
-                </select>
-                <select className="choose">
-                    <option>2023</option>
-                    <option>2019</option>
-                    <option>2015</option>
-                    <option>2011</option>
-                    <option>2007</option>
-                    <option>3003</option>
-                    <option>1999</option>
-                    <option>1995</option>
-                    <option>1991</option>
-                    <option>1987</option>
-                    <option>1983</option>
-                    <option>1979</option>
-                    <option>1975</option>
-                    <option>1971</option>
-                    <option>1967</option>
-                    <option>1963</option>
-                    <option>1959</option>
-                </select>
-            </div>
+            <section className="candidates">
+
+                {/*PRESIDENT SECTION*/}
+
+                <div className="president">
+                    <h5>
+                        president
+                    </h5>
+                    <div className="content">
+                        <div className="large">
+                            <div className="percent"></div>
+                            <div className="apc">
+                                <div className="polygon">
+                                    <img src={Polygon} alt="" />
+                                </div>
+                                <div className="tinubu">
+                                    <div className="apc1">
+                                        <img src={tinu} alt="" />
+                                    </div>
+                                    <div className="apc2">
+                                        <h6>tinubu, APC</h6>
+                                        <p>81,283,786 votes(51.2%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="large">
+                            <div className="percent2"></div>
+                            <div className="lp">
+                                <div className="polygon2">
+                                    <img src={Polygon} alt="" />
+                                </div>
+                                <div className="obi">
+                                    <div className="lp1">
+                                        <img src={obi} alt="" />
+                                    </div>
+                                    <div className="lp2">
+                                        <h6>Peter, LP</h6>
+                                        <p>81,283,786 votes(51.2%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="large">
+                            <div className="percent3"></div>
+                            <div className="pdp">
+                                <div className="polygon3">
+                                    <img src={Polygon} alt="" />
+                                </div>
+                                <div className="atiku">
+                                    <div className="pdp1">
+                                        <img src={atiku} alt="" />
+                                    </div>
+                                    <div className="pdp2">
+                                        <h6>Atiku, PDP</h6>
+                                        <p>81,283,786 votes(51.2%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* SENATE AND HOUSE OF REPRESENTATIVE SECTION */}
+
+                <div className="sen-house-container">
+                    <div className="senate-container">
+                        <h5>
+                            senate
+                        </h5>
+                        <div className="whole-sen-cont">
+                            <div className="large">
+                                <div className="percentage"></div>
+                                <div className="apc-container">
+                                    <div className="p">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="tinubu1">
+                                        <div className="apc-logo">
+                                            <img src={apc} alt="" />
+                                        </div>
+                                        <div className="apc-word">
+                                            <h6>all progressive congress</h6>
+                                            <p>54 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="large">
+                                <div className="percentage2"></div>
+                                <div className="lp-container">
+                                    <div className="p2">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="obi1">
+                                        <div className="lp-logo">
+                                            <img src={lp} alt="" />
+                                        </div>
+                                        <div className="lp-word">
+                                            <h6>the labour party</h6>
+                                            <p>12 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="large">
+                                <div className="percentage3"></div>
+                                <div className="pdp-container">
+                                    <div className="p3">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="atiku1">
+                                        <div className="pdp-logo">
+                                            <img src={pdp} alt="" />
+                                        </div>
+                                        <div className="pdp-word">
+                                            <h6>people democratic party</h6>
+                                            <p>36 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*HOUSE */}
+
+                    <div className="house-container">
+                        <h5>house</h5>
+                        <div className="whole-house-cont">
+                            
+                            <div className="large">
+                                <div className="line1"></div>
+                                <div className="apc1-container">
+                                    <div className="poly">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="tinubu2">
+                                        <div className="apc-logo">
+                                            <img src={apc} alt="" />
+                                        </div>
+                                        <div className="apc1-word">
+                                            <h6>all progressive congress</h6>
+                                            <p>54 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                            <div className="large">
+                                <div className="line2"></div>
+                                <div className="lp2-container">
+                                    <div className="poly2">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="obi2">
+                                        <div className="lp-logo">
+                                            <img src={lp} alt="" />
+                                        </div>
+                                        <div className="lp2-word">
+                                            <h6>the labour party</h6>
+                                            <p>12 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="large">
+                                <div className="line3"></div>
+                                <div className="pdp2-container">
+                                    <div className="poly3">
+                                        <img src={Polygon} alt="" />
+                                    </div>
+                                    <div className="atiku2">
+                                        <div className="pdp-logo">
+                                            <img src={pdp} alt="" />
+                                        </div>
+                                        <div className="pdp2-word">
+                                            <h6>people democratic party</h6>
+                                            <p>36 seats (51.2%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div className="horizontal">
                 <hr/>
@@ -188,7 +388,7 @@ const FrontPage = () => {
                 <img src={Frame1} alt="" />
             </div>
 
-            <div className="first">
+            {/*<div className="first">
                 <div className="second">
                     <img src={Ellipse1} alt="" />
                     <div className="third">
@@ -279,7 +479,7 @@ const FrontPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <footer className="foot">
                 <div className="big-footer">
