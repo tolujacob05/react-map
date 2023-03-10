@@ -349,6 +349,10 @@
     height: 782px;
     border-radius: 13px;
     margin: 15px 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1B1F30;
 }
 
 .horizontal {
@@ -357,31 +361,33 @@
     position: relative;
     bottom: 10px;
     opacity: 0.1;
+    padding-top: 50px;
 }
 
 .percent {
     border: 2px solid #64CCFF;
-    width: 552px;
+    /*width: 552px;*/
     height: 16px;
     background: #64CCFF;
 }
 
 .percent2 {
     border: 2px solid #0AA83F;
-    width: 491px;
+   /* width: 491px;*/
     height: 16px;
     background: #0AA83F;
 }
 
 .percent3 {
     border: 2px solid #D62B3C;
-    width: 225px;
+   /* width: 225px;*/
     height: 16px;
     background: #D62B3C;
 }
 
 .candidates {
     margin: 15px 115px;
+    width: 1268px;
 }
 
 .president h5 {
@@ -397,13 +403,14 @@
 
 .content {
     display: flex;
-    justify-content: space-between;
-}
-
+    width: 100%;
+} 
+ 
 .apc {
     margin-top: 10px;
-    position: relative;
-    transform: translateX(38px);
+    position: absolute;
+    left: 2.5%;
+    transform: translateX(px);
 }
 
 .polygon img {
@@ -417,15 +424,14 @@
     border: 1px solid #fff;
     background: #FFFFFF;
     width: 206px;
-    height: 56px;
-}
-
-.apc1 {
+    height: 66px;
     padding: 8px;
+    gap: 10px;
 }
 
 .apc2 {
-    padding: 8px;
+    display: grid;
+    gap: 20px;
 }
 
 .apc2 h6 {
@@ -448,8 +454,9 @@
 
 .lp {
     margin-top: 10px;
-    position: relative;
-    transform: translateX(108px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(px);
 }
 
 .polygon2 img {
@@ -464,14 +471,8 @@
     background: #FFFFFF;
     width: 204.67px;
     height: 56px;
-}
-
-.lp1 {
     padding: 8px;
-}
-
-.lp2 {
-    padding: 8px;
+    gap: 10px;
 }
 
 .lp2 h6 {
@@ -495,7 +496,7 @@
 .pdp {
     margin-top: 10px;
     position: relative;
-    transform: translateX(30px);
+    transform: translateX(-90px);
 }
 
 .polygon3 img {
@@ -510,14 +511,13 @@
     background: #FFFFFF;
     width: 190.67px;
     height: 64px;
-}
-
-.pdp1 {
     padding: 8px;
+    gap: 10px;
 }
 
 .pdp2 {
-    padding: 8px;
+    display: grid;
+    gap: 20px;
 }
 
 .pdp2 h6 {
@@ -557,12 +557,13 @@
 
 .whole-sen-cont {
     display: flex;
+    width: 100%;
 }
 
 .apc-container {
     margin-top: 10px;
     position: relative;
-    transform: translateX(px);
+    transform: translateX(-70px);
 }
 
 .p img {
@@ -575,10 +576,15 @@
     display: flex;
     border: 1px solid #fff;
     background: #FFFFFF;
-    width: 160px;
-    height: 76px;
+    width: 180px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.apc-word {
+    display: grid;
+    gap: 15px;
 }
 
 .apc-word h6 {
@@ -595,7 +601,7 @@
 .apc-word p {
     width: 96px;
     height: 16px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -605,7 +611,7 @@
 .lp-container {
     margin-top: 10px;
     position: relative;
-    transform: translateX(-15px);
+    left: 30%;
 }
 
 .p2 img {
@@ -618,10 +624,15 @@
     display: flex;
     border: 1px solid #fff;
     background: #FFFFFF;
-    width: 144px;
-    height: 76px;
+    width: 164px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.lp-word {
+    display: grid;
+    gap: 15px;
 }
 
 .lp-word h6 {
@@ -635,9 +646,9 @@
 }
 
 .lp-word p {
-    width: 96px;
+    width: 106px;
     height: 16px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -647,7 +658,7 @@
 .pdp-container {
     margin-top: 10px;
     position: relative;
-    transform: translateX(44px);
+    transform: translateX(-80px);
 }
 
 .p3 img {
@@ -661,9 +672,14 @@
     border: 1px solid #fff;
     background: #FFFFFF;
     width: 169px;
-    height: 76px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.pdp-word {
+    display: grid;
+    gap: 15px;
 }
 
 .pdp-word h6 {
@@ -679,7 +695,7 @@
 .pdp-word p {
     width: 100px;
     height: 16px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -688,31 +704,32 @@
 
 .percentage {
     border: 2px solid #64CCFF;
-    width: 207px;
+   /* width: 207px;*/
     height: 16px;
     background: #64CCFF;
 }
 
 .percentage2 {
     border: 2px solid #0AA83F;
-    width: 145px;
+   /* width: 145px;*/
     height: 16px;
     background: #0AA83F;
 }
 
 .percentage3 {
     border: 2px solid #D62B3C;
-    width: 214px;
+   /* width: 214px;*/
     height: 16px;
     background: #D62B3C;
 }
 
 .house-container {
-    transform: translateX(25px);
+    transform: translateX(-50%);
 }
 
 .whole-house-cont {
     display: flex;
+    width: 100%;
 }
 
 .house-container h5 {
@@ -729,12 +746,12 @@
 .apc1-container {
     margin-top: 10px;
     position: relative;
-    transform: translateX(px);
+    transform: translateX(-70px);
 }
 
 .line1 {
     border: 2px solid #64CCFF;
-    width: 260px;
+    /*width: 260px;*/
     height: 16px;
     background: #64CCFF;
 }
@@ -750,9 +767,14 @@
     border: 1px solid #fff;
     background: #FFFFFF;
     width: 160px;
-    height: 76px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.apc1-word {
+    display: grid;
+    gap: 15px;
 }
 
 .apc1-word h6 {
@@ -767,9 +789,9 @@
 }
 
 .apc1-word p {
-    width: 96px;
+    width: 106px;
     height: 16px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -779,7 +801,7 @@
 .lp2-container {
     margin-top: 10px;
     position: relative;
-    transform: translateX(-15px);
+    transform: translateX(65px);
 }
 
 .line2 {
@@ -799,9 +821,14 @@
     border: 1px solid #fff;
     background: #FFFFFF;
     width: 144px;
-    height: 76px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.lp2-word {
+    display: grid;
+    gap: 15px;
 }
 
 .lp2-word h6 {
@@ -815,9 +842,9 @@
 }
 
 .lp2-word p {
-    width: 96px;
+    width: 106px;
     height: 16px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -826,13 +853,14 @@
 
 .pdp2-container {
     margin-top: 10px;
-    position: relative;
-    transform: translateX(44px);
+    position: absolute;
+    left: 72%;
+    transform: translateX(px);
 }
 
 .line3 {
     border: 2px solid #D62B3C;
-    width: 260px;
+    /*width: 260px;*/
     height: 16px;
     background: #D62B3C;
 }
@@ -848,9 +876,14 @@
     border: 1px solid #fff;
     background: #FFFFFF;
     width: 169px;
-    height: 76px;
+    height: 86px;
     padding: 8px;
     gap: 10px;
+}
+
+.pdp2-word {
+    display: grid;
+    gap: 15px;
 }
 
 .pdp2-word h6 {
@@ -866,7 +899,7 @@
 .pdp2-word p {
     width: 100px;
     height: 16px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: #585858;
     font-weight: 400;
@@ -1169,6 +1202,43 @@
     width: 10px;
     height: 10.65px;
 }*/
+
+/* table section */
+
+.table {
+    margin: 15px 115px;
+    padding-top: 50px;
+}
+
+.table h3 {
+    width: 133px;
+    height: 35px;
+    font-size: 24px;
+    line-height: 34.68px;
+    color: solid #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.table hr {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+} 
+
+table tr {
+    color: white;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #1B1F30;
+}
 
 /* FOOTER */
 .foot {
