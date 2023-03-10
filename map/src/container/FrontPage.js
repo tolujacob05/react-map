@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import pic1 from "../img/pic1.png";
-import Frame1 from "..//img/Frame1.png";
-/*import Ellipse1 from "..//img/Ellipse1.png";
+/*import Frame1 from "..//img/Frame1.png";
+import Ellipse1 from "..//img/Ellipse1.png";
 import Ellipse2 from "..//img/Ellipse2.png";
 import Vector from "..//img/Vector.png";
 import Vector2 from "..//img/Vector2.png";
@@ -26,6 +26,16 @@ import "../css/FrontPage.css";
 import axios from "axios";
 
 const FrontPage = () => {
+
+    function search(nameKey, myArray){
+        for (let i=0; i < myArray.length; i++) {
+            console.log(myArray[i].political_party_name, nameKey);
+            if (myArray[i].political_party_name === nameKey) {
+                return myArray[i];
+            }
+        }
+    }
+
   /*useState for loading the candidate's API result */
   const [obiData, setObiData] = useState("");
   const [tinubusData, setTinubuData] = useState("");
@@ -33,9 +43,9 @@ const FrontPage = () => {
 
   const [stateResult, setStateResult] = useState([]);
 
-  {
+  
     /* function for first dropdown */
-  }
+
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -50,11 +60,10 @@ const FrontPage = () => {
   };
   window.addEventListener("click", hideDropdown);
 
-  console.log(open, dropdownRef.current);
+//   console.log(open, dropdownRef.current);
 
-  {
+  
     /* fnction for second dropdown */
-  }
 
   const [isOpen, setIsOpen] = useState(false);
   const dropRef = useRef(null);
@@ -70,12 +79,12 @@ const FrontPage = () => {
   };
   window.addEventListener("click", closeDropdown);
 
-  console.log(isOpen, dropRef.current);
+//   console.log(isOpen, dropRef.current);
 
   /* LOADING THE API candidate result */
 
   useEffect(() => {
-    var data = "";
+    
 
     var config = {
       method: "get",
@@ -83,12 +92,12 @@ const FrontPage = () => {
       headers: {
         Accept: "application/json",
       },
-      data: data,
+      
     };
 
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        /*console.log(JSON.stringify(response.data));*/
         setObiData(response.data[0]);
         setTinubuData(response.data[1]);
         setAtikuData(response.data[2]);
@@ -103,12 +112,14 @@ const FrontPage = () => {
       headers: {
         Accept: "application/json",
       },
-      data: data,
+      
     };
 
-    axios(config)
+    // Api for Map 
+
+    axios()
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
       })
       .catch(function (error) {
         console.log(error);
@@ -120,18 +131,20 @@ const FrontPage = () => {
       headers: {
         Accept: "application/json",
       },
-      data: data,
+      
     };
 
-    axios(config)
+    axios()
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
         setStateResult(response.data);
       })
       .catch(function (error) {
         console.log(error);
       });
   }, []);
+
+ 
 
   return (
     <>
@@ -1009,6 +1022,24 @@ const FrontPage = () => {
             fill="#00344D"
           />
         </svg>
+
+        <div className="boxes">
+            <div className="box1">
+                <div className="blue"></div>
+                <h3>apc</h3>
+                <p></p>
+            </div>
+            <div className="box2">
+                <div className="green"></div>
+                <h3>lp</h3>
+                <p></p>
+            </div>
+            <div className="box3 ">
+                <div className="red"></div>
+                <h3>pdp</h3>
+                <p></p>
+            </div>
+        </div>
       </div>
 
       <div className="first">
@@ -1118,10 +1149,10 @@ const FrontPage = () => {
           </tr>
           {Object.keys(stateResult)?.map((state, index) => (
             <tr key={index}>
-              <td>{state?.state_name}</td>
-              <td>{state?.candidate_vote}</td>
-              <td></td>
-              <td></td>
+              <td> {state} </td>
+              <td> {search("All Progressive Congress", stateResult[state])?.candidate_votes} </td>
+              <td> {search("Labour Party", stateResult[state])?.candidate_votes} </td>
+              <td> {search("People's Democratic Party", stateResult[state])?.candidate_votes} </td>
             </tr>
           ))}
         </table>
